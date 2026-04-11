@@ -146,7 +146,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send notification email to the business
     const notificationEmailResponse = await sendEmail(
-      ["jarrydr78@gmail.com"],
+      ["jarryd@atlasstrengthandperformance.com"],
       "Atlas Performance <jarryd@atlasstrengthandperformance.com>",
       `New Contact Form Submission: ${safeInquiryLabel}`,
       `
