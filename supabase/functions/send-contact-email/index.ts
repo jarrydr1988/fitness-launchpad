@@ -147,7 +147,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send notification email to the business
     const notificationEmailResponse = await sendEmail(
       ["jarrydr78@gmail.com"],
-      "Atlas Performance <onboarding@resend.dev>",
+      "Atlas Performance <jarryd@atlasstrengthandperformance.com>",
       `New Contact Form Submission: ${safeInquiryLabel}`,
       `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
