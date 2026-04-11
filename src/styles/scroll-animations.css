@@ -1,0 +1,330 @@
+/* Scroll-driven animations - inspired by CodePen pimskie */
+
+/* ============================================
+   HERO SECTION ANIMATIONS
+   ============================================ */
+.hero-content {
+  animation: heroFadeIn 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 0% contain 20%;
+}
+
+.hero-tagline {
+  animation: slideInLeft 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 0% contain 15%;
+}
+
+.hero-heading {
+  animation: heroReveal 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 5% contain 25%;
+}
+
+.hero-subheading {
+  animation: fadeSlideUp 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 10% contain 30%;
+}
+
+.hero-cta {
+  animation: scaleIn 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 15% contain 35%;
+}
+
+/* ============================================
+   ABOUT SECTION ANIMATIONS
+   ============================================ */
+.about-header {
+  animation: fadeSlideUp 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 10% contain 30%;
+}
+
+.about-content {
+  animation: slideInLeft 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 15% contain 35%;
+}
+
+.about-visual {
+  animation: slideInRight 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 20% contain 40%;
+}
+
+.about-feature {
+  animation: featureReveal 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 25% contain 45%;
+}
+
+/* ============================================
+   SERVICES SECTION ANIMATIONS
+   ============================================ */
+.services-header {
+  animation: fadeSlideUp 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 10% contain 30%;
+}
+
+.services-carousel {
+  animation: carouselSlideUp 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 15% contain 35%;
+}
+
+.services-carousel-1 {
+  animation-range: entry 10% contain 30%;
+}
+
+.services-carousel-2 {
+  animation-range: entry 20% contain 40%;
+}
+
+.service-card {
+  animation: cardReveal 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 20% contain 40%;
+}
+
+/* ============================================
+   TESTIMONIALS SECTION ANIMATIONS
+   ============================================ */
+.testimonials-container {
+  container-type: inline-size;
+}
+
+.testimonial-carousel {
+  animation: testimonialSlideUp 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 20% contain 30%;
+}
+
+.testimonial-carousel-1 {
+  animation-range: entry 10% contain 25%;
+}
+
+.testimonial-carousel-2 {
+  animation-range: entry 25% contain 40%;
+}
+
+.testimonial-card {
+  animation: cardReveal 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 15% contain 35%;
+}
+
+/* ============================================
+   CONTACT SECTION ANIMATIONS
+   ============================================ */
+.contact-header {
+  animation: fadeSlideUp 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 10% contain 30%;
+}
+
+.contact-form {
+  animation: formReveal 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 15% contain 40%;
+}
+
+/* ============================================
+   CALCULATOR PAGE ANIMATIONS
+   ============================================ */
+.calculator-header {
+  animation: fadeSlideUp 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 0% contain 20%;
+}
+
+.calculator-intro {
+  animation: slideInLeft 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 5% contain 25%;
+}
+
+.calculator-form {
+  animation: formReveal 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 10% contain 35%;
+}
+
+.nutrition-content {
+  animation: fadeSlideUp 1ms ease-out both;
+  animation-timeline: view(block);
+  animation-range: entry 10% contain 30%;
+}
+
+/* ============================================
+   KEYFRAMES
+   ============================================ */
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes heroReveal {
+  from {
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes featureReveal {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes carouselSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes testimonialSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes formReveal {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   FALLBACK FOR UNSUPPORTED BROWSERS
+   ============================================ */
+@supports not (animation-timeline: view()) {
+  .hero-content,
+  .hero-tagline,
+  .hero-heading,
+  .hero-subheading,
+  .hero-cta,
+  .about-header,
+  .about-content,
+  .about-visual,
+  .about-feature,
+  .services-header,
+  .services-carousel,
+  .service-card,
+  .testimonial-carousel,
+  .testimonial-card,
+  .contact-header,
+  .contact-form,
+  .calculator-header,
+  .calculator-intro,
+  .calculator-form,
+  .nutrition-content {
+    animation: fallbackFadeIn 0.8s ease-out forwards;
+  }
+  
+  .about-visual,
+  .services-carousel-2,
+  .testimonial-carousel-2 {
+    animation-delay: 0.2s;
+  }
+  
+  .about-feature {
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes fallbackFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
